@@ -43,6 +43,7 @@ gem "bootsnap", require: false
 
 # Debugging with sassc-rails and web packer
 gem 'sassc-rails'
+
 gem 'webpacker'
 
 
