@@ -6,13 +6,6 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true %>
-  
-    <nav>
-    <%= link_to 'Home', root_path %>
-    <%= link_to 'Portfolio', portfolio_path %>
-    
-    </nav>
-  
   </head>
 
   <body>
@@ -21,6 +14,7 @@
       <nav>
         <%= link_to 'Home', root_path %>
         <%= link_to 'Portfolio', portfolio_path %>
+        <%= link_to 'About', about_path %>
         <!-- Add other navigation links here -->
       </nav>
     </header>
