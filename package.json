@@ -9,4 +9,12 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "webpack-dev-server": "^3"
   }
+  
+}
+
+{
+  "scripts": {
+    "build": "webpack --mode production",
+    "postinstall": "webpacker:install"
+  }
 }
