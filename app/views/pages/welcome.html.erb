@@ -30,3 +30,23 @@
     </footer>
   </body>
 </html>
+<!-- app/views/pages/welcome.html.erb -->
+<header>
+  <nav>
+    <%= link_to 'Home', root_path %>
+    <%= link_to 'Portfolio', portfolio_path %>
+    <!-- Add other navigation links here -->
+  </nav>
+</header>
+
+<main>
+  <section class="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is the welcome page.</p>
+    <%= link_to 'View My Portfolio', portfolio_path, class: 'btn btn-primary' %>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Your Name. All rights reserved.</p>
+</footer>
