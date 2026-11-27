@@ -1,4 +1,4 @@
-/* app/assets/stylesheets/pages.css.scss */
+/* app/assets/stylesheets/pages.scss */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -28,8 +28,7 @@ body {
   }
   
   main {
-    background-image: url('https://your-image-hosting-service.com/your-background-image.jpg');
-    background-size: cover;
+    background-color: #1f2937;
     color: white;
     padding: 2rem;
     text-align: center;
@@ -78,10 +77,13 @@ body {
   
   .grid-item {
     flex: 1 1 calc(33.333% - 20px);
-    box-shadow: 0
+    min-width: 240px;
   }
 
-  /* app/assets/stylesheets/pages.css.scss */
+  .grid-item a {
+    color: #93c5fd;
+  }
+
 .welcome-section {
   text-align: center;
   margin: 20px 0;

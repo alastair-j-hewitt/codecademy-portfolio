@@ -1,18 +1,27 @@
-<!-- app/views/pages/portfolio.html.erb -->
 <main>
   <section class="main-section">
-    <img src="your_best_work_image_url" alt="Best Work">
+    <h1>Selected work</h1>
   </section>
 
   <section class="supporting-section">
     <div class="grid">
       <div class="grid-item">
-        <img src="app_screenshot_url" alt="App Screenshot">
-        <h2>App Title</h2>
-        <p>App Description</p>
-        <a href="heroku_app_url">View App</a>
+        <h2>Kangacook</h2>
+        <p>Recipe browser with a Django REST API (search, detail endpoints, tests) and a React + Vite frontend.</p>
+        <%= link_to "View code", "https://github.com/alastair-j-hewitt/kangacook", target: "_blank", rel: "noopener" %>
       </div>
-      <!-- Repeat grid-item for other apps -->
+
+      <div class="grid-item">
+        <h2>Scan to pay</h2>
+        <p>Rails prototype of a QR-code payment flow: camera scan, transaction confirmation and PIN entry.</p>
+        <%= link_to "View code", "https://github.com/alastair-j-hewitt/b", target: "_blank", rel: "noopener" %>
+      </div>
+
+      <div class="grid-item">
+        <h2>More projects</h2>
+        <p>Other public work, including Rails exercises and experiments.</p>
+        <%= link_to "GitHub profile", "https://github.com/alastair-j-hewitt", target: "_blank", rel: "noopener" %>
+      </div>
     </div>
   </section>
 </main>

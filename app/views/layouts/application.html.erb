@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Portfolio</title>
+    <title>Alastair Hewitt | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <header>
-      <!-- Add your header content here -->
       <nav>
-        <%= link_to 'Home', root_path %>
-        <%= link_to 'Portfolio', portfolio_path %>
-        <%= link_to 'About', about_path %>
-        <!-- Add other navigation links here -->
+        <%= link_to "Home", root_path %>
+        <%= link_to "Portfolio", portfolio_path %>
+        <%= link_to "About", about_path %>
       </nav>
     </header>
 
     <%= yield %>
 
     <footer>
-      <!-- Add your footer content here -->
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
+      <%= link_to "GitHub", "https://github.com/alastair-j-hewitt", target: "_blank", rel: "noopener" %>
+      <%= link_to "LinkedIn", "https://linkedin.com/in/alastair-j-hewitt-31207943", target: "_blank", rel: "noopener" %>
+      <p>&copy; <%= Date.current.year %> Alastair Hewitt</p>
     </footer>
   </body>
 </html>
