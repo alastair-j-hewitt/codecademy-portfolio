@@ -41,14 +41,11 @@ gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-# Debugging with sassc-rails and web packer
+# Compiles app/assets/stylesheets/*.scss
 gem 'sassc-rails'
 
-gem 'webpacker'
 
-gem 'jsbundling-rails'
 
-gem 'rbs'
 
 
 

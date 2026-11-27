@@ -1,52 +1,5 @@
-<!-- app/views/pages/welcome.html.erb -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Welcome</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Alastair Hewitt</h1>
-    </header>
-
-    <main>
-      <h2>Welcome to My Portfolio</h2>
-      <p>Full Stack Engineer with experience in building RESTful Api's.</p>
-      <a href="#" class="btn">View my Work</a>
-    </main>
-
-    <footer>
-      <a href="https://github.com/alastair-j-hewitt" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/alastair-j-hewitt-31207943" target="_blank">LinkedIn</a>
-      <p>&copy; 2024 Alastair Hewitt</p>
-    </footer>
-  </body>
-</html>
-<!-- app/views/pages/welcome.html.erb -->
-<header>
-  <nav>
-    <%= link_to 'Home', root_path %>
-    <%= link_to 'Portfolio', portfolio_path %>
-    <!-- Add other navigation links here -->
-  </nav>
-</header>
-
-<main>
-  <section class="welcome-section">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the welcome page.</p>
-    <%= link_to 'View My Portfolio', portfolio_path, class: 'btn btn-primary' %>
-  </section>
+<main class="welcome-section">
+  <h1>Alastair Hewitt</h1>
+  <p>Full-stack engineer building RESTful APIs with Java/Spring Boot, Kotlin, and Ruby on Rails.</p>
+  <%= link_to "View my work", portfolio_path, class: "btn btn-primary" %>
 </main>
-
-<footer>
-  <p>&copy; 2023 Your Name. All rights reserved.</p>
-</footer>
